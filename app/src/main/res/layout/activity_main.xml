@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="xyz.robertsen.magiccompanion.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_base_v_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_base_v_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_base_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- TOP LEFT -->
+
+    <xyz.robertsen.magiccompanion.PlayerView
+        android:id="@+id/player1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_forest"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:rotation="180"
+
+        app:layout_constraintBottom_toTopOf="@+id/guide_base_h"
+        app:layout_constraintEnd_toStartOf="@id/guide_base_v_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </xyz.robertsen.magiccompanion.PlayerView>
+
+    <!-- BOTTOM LEFT -->
+    <xyz.robertsen.magiccompanion.PlayerView
+        android:id="@+id/player2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_mountain"
+
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide_base_v_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guide_base_h">
+
+    </xyz.robertsen.magiccompanion.PlayerView>
+
+
+
+    <!-- TOP RIGHT -->
+    <xyz.robertsen.magiccompanion.PlayerView
+        android:id="@+id/player3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_island"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:rotation="180"
+
+        app:layout_constraintBottom_toTopOf="@id/guide_base_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_base_v_top"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </xyz.robertsen.magiccompanion.PlayerView>
+
+    <!-- BOTTOM RIGHT -->
+    <xyz.robertsen.magiccompanion.PlayerView
+        android:id="@+id/player4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_swamp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toBottomOf="@id/guide_base_h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_base_v_bottom"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </xyz.robertsen.magiccompanion.PlayerView>
+
+</android.support.constraint.ConstraintLayout>

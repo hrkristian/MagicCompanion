@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MagicCompanion</string>
+    <string name="cardActivityName">Card Search</string>
+
+
+    <!-- Menu Strings -->
+    <string name="menuButtonSearch">🀄 Search</string>
+    <string name="menuButtonDice">🎲 Dice</string>
+    <string name="menuButtonPlayers">🔢 Players</string>
+    <string name="menuButtonLife">♥ Life</string>
+    <string name="menuButtonReset">❌ Reset</string>
+
+    <string name="search_hint">🀄 Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Card View Strings -->
+    <string name="cardTitlePlaceholder">%1$s</string>
+    <string name="cardTypePlaceholder">Type: %1$s</string>
+    <string name="cardManaPlaceholder">Mana: %1$s</string>
+    <string name="cardStatsPlaceholder">Stats: %1$s / %2$s </string>
+    <string name="cardTextPlaceholder">%1$s</string>
+    <string name="cardRulingsItem"><b>%1$s</b>\n%2$s\n</string>
+</resources>

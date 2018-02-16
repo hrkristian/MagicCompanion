@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ImageViewList">
+        <item name="android:background">#000000</item>
+        <item name="android:foreground">@drawable/frame</item>
+        <item name="android:paddingTop">2.5dp</item>
+        <item name="android:paddingBottom">2.5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+    </style>
+    <style name="ImageViewListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:paddingBottom">2.5dp</item>
+        <item name="android:paddingTop">2.5dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+    <style name="playerTextColor">
+        <item name="android:textColor">#ffffff</item>/home/kris/Pictures/MagicTheGathering/icons/ic_mana_1.xml
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">25</item>
+    </style>
+
+    <style name="TransparentImageButton" parent="Widget.AppCompat.ImageButton">
+
+    </style>
+
+    <style name="cardActivityBackground">
+        <item name="android:background">@color/cardActivityRoot</item>
+    </style>
+    <style name="cardActivityItem">
+        <item name="android:background">@drawable/card_item_background</item>
+    </style>
+
+
+    <style name="cardActivityView">
+
+    </style>
+    <style name="cardActivityImage" parent="cardActivityView">
+        <item name="android:background">@drawable/card_image_background</item>
+
+    </style>
+    <style name="cardActivityTitle" parent="cardActivityView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="cardActivityList" parent="cardActivityView">
+        <item name="android:background">@drawable/card_text_background</item>
+    </style>
+</resources>
